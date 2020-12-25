@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1],{7:function(n,o,t){"use strict";function u(n,o){return console.log("oyp4"),n+o}function c(n,o){return console.log("oyp22"),n-o}t.r(o),t.d(o,"count",(function(){return u})),t.d(o,"add",(function(){return c}))}}]);
