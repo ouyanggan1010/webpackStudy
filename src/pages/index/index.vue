@@ -19,16 +19,17 @@ export default {
     };
   },
   mounted() {
-    import(/* webpackChunkName:"commonjs" */ "../../commonjs/common.js").then(
-      ({ default: obj }) => {
-        console.log(obj.name);
-      }
-    );
+    // import(/* webpackChunkName:"commonjs" */ "../../commonjs/common.js").then(
+    //   ({ default: obj }) => {
+    //     console.log(obj.name);
+    //   }
+    // );
     console.log("999", $);
   },
 };
 </script>
 <style lang="scss" scoped>
+
 .divOne {
   width: 200px;
   height: 200px;

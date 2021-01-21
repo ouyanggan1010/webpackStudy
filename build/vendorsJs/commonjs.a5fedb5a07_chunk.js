@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1],{9:function(n,w,e){"use strict";e.r(w);w.default={name:"欧阳平"}}}]);

@@ -1,4 +1,4 @@
-import(/* webpackChunkName:"commonjs" */ "../../commonjs/common.js");
+// import(/* webpackChunkName:"commonjs" */ "../../commonjs/common.js");
 
 import Vue from "vue";
 import App from "./index.vue";
