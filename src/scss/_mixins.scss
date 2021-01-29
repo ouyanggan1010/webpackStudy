@@ -1,0 +1,57 @@
+@charset "utf-8";
+// opacity透明度
+@mixin opacity($opacity) {
+    opacity: $opacity;
+    filter: alpha(opacity=$opacity * 100);
+}
+
+// clearfix清除浮动，float
+@mixin clearfix {
+    *zoom: 1;
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+//一行省略
+@mixin overell {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+//icon
+
+/*图标*/
+
+@mixin icon($url) {
+    [class*="icon-"] {
+        display: inline-block;
+        background: url($url) no-repeat;
+    }
+}
+
+@mixin appicon($left, $top, $width, $height) {
+    background-position: $left $top;
+    width: $width;
+    height: $height;
+}
+
+
+/*跨浏览器多行省略*/
+
+@mixin ellipses($color) {
+    .ellipses:after {
+        content: "…";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding-left: 20px;
+        background: -webkit-linear-gradient(left, transparent, #{$color} 55%);
+        background: -o-linear-gradient(right, transparent, #{$color} 55%);
+        background: -moz-linear-gradient(right, transparent, #{$color} 55%);
+        background: linear-gradient(to right, transparent, #{$color} 55%);
+    }
+}

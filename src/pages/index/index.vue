@@ -1,6 +1,7 @@
 <template>
   <div class="divOne">
     <span>{{ title }}</span>
+    <div class="iconfont icon-shouye"></div>
     <a href="./login.html">跳转到login</a>
     <my-count></my-count>
   </div>
@@ -8,6 +9,7 @@
 <script>
 import $ from "jquery";
 import Count from "../../components/count.vue";
+import(/* webpackChunkName:"iconfont" */ "../../css/iconfont.css");
 
 export default {
   components: {

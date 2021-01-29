@@ -15,11 +15,11 @@ export default {
 </script>
 <style lang="scss" scoped>
 .divTne {
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
   border: 1px solid red;
   span{
-      color: blueviolet;
+      color: rgb(46, 43, 226);
   }
 }
 </style>

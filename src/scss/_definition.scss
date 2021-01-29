@@ -1,0 +1,20 @@
+@charset "utf-8";
+$base-size: 1px;
+
+//------------------------------定义颜色
+$colors: (
+    "white": #fff,
+    "black": #000
+);
+//------------------------------spacing
+//.mt-0 => margin-top level 1
+$spacing-types: (
+    "m": margin,
+    "p": padding,
+);
+$spacing-directions: (
+    "t": top,
+    "b": bottom,
+    "r": right,
+    "l": left,
+);

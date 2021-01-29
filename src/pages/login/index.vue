@@ -1,9 +1,11 @@
 <template>
   <div class="divOne">
     <span>{{ title }}</span>
+    <div class="iconfont icon-luxiang"></div>
   </div>
 </template>
 <script>
+import(/* webpackChunkName:"iconfont" */ "../../css/iconfont.css");
 export default {
   data() {
     return {

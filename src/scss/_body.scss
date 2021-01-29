@@ -1,0 +1,135 @@
+﻿@charset "utf-8";
+
+// ------------------------这些样式重置，如果在需要引入整个外部UI框架的时候，可以根据自定义删改
+body {
+    background-color: #e6eaf2;
+}
+body,
+html {
+    height: 100%;
+    min-width: 1200px;
+}
+
+body,
+div,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+input,
+textarea,
+p,
+th,
+td,
+button {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+    //表示字体大小加行高，20px/12px 约等于1.6667，向上四舍五入
+    font: 12px/1.6667 "宋体", Arial, Verdana, tahoma, Helvetica, sans-serif;
+}
+
+input,
+select,
+textarea {
+    // 设置字体属性为默认大小，是相对于浏览器默认字体大小或继承body设定的字体大小来说的
+    font-size: 100%;
+    line-height: inherit; //控件元素默认行高是normal是不受外部影响的，需要重置为inherit
+    outline: none;
+}
+
+/* 去掉各Table cell 的边距并让其边重合 */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* IE bug fixed: th 不继承 text-align*/
+th {
+    text-align: inherit;
+}
+
+/* 去除默认边框 */
+img {
+    border: 0;
+}
+
+/* ie6 7 8(q) bug 显示为行内表现 */
+iframe {
+    display: block;
+}
+
+/* 去掉列表前的标识, li 会继承 */
+ol,
+ul {
+    list-style: none;
+}
+
+/* 标题都自定义, 适应多个系统应用 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: 500;
+}
+
+// ------------------------结束
+
+/* 加粗 */
+
+.fwb {
+    font-weight: bold;
+}
+
+/*被访问过链接*/
+
+a {
+    &:link,
+    &:visited,
+    &:hover,
+    &:active {
+        text-decoration: none;
+        color: #000000;
+    }
+}
+
+//一行省略
+.overOne {
+    @include overell;
+}
+
+//换行，文字与单词换行
+
+//指定如果足够长得话，应该换行，尽量不拆分单词
+.wpword {
+    word-wrap:break-word;
+}
+// 不管单词的完整性，拆分单词换行
+.wbword {
+    word-break: break-word;
+}
+
+//手型
+.curp {
+    cursor: pointer;
+}
+
+// 清除浮动
+.clear {
+    @include clearfix;
+}
